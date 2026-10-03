@@ -3,4 +3,13 @@
     <string name="label_text">Labelnya</string>
     <string name="input_hint">Inputannya</string>
     <string name="button_text">Tombolnya</string>
+    <string name="content_desc_gembok">Icon Gembok</string>
+    <string name="atur_ulang_sandi">Atur ulang kata sandi Anda</string>
+    <string name="welcome_dashboard">Selamat Datang di Dashboard!</string>
+    <string name="btn_fragment_1">Fragment 1</string>
+    <string name="btn_fragment_2">Fragment 2</string>
+    <string name="fragment_1_text">Ini adalah Fragment 1</string>
+    <string name="fragment_2_text">Ini adalah Fragment 2</string>
+    <string name="fragment_satu_title">INI ADALAH FRAGMENT SATU</string>
+    <string name="fragment_dua_title">INI ADALAH FRAGMENT DUA</string>
 </resources>

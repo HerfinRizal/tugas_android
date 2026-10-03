@@ -6,8 +6,8 @@
         <item name="android:text">OK</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">#FFFFFF</item>
-        <item name="android:background">#2F56C8</item>
-        <item name="android:backgroundTint">#2F56C8</item>
+        <item name="android:background">#1FDFF1</item>
+        <item name="android:backgroundTint">#1FDFF1</item>
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:minHeight">40dp</item>
     </style>
