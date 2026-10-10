@@ -12,4 +12,5 @@
     <string name="fragment_2_text">Ini adalah Fragment 2</string>
     <string name="fragment_satu_title">INI ADALAH FRAGMENT SATU</string>
     <string name="fragment_dua_title">INI ADALAH FRAGMENT DUA</string>
+    <string name="etNamaUsaha">FORM INPUT USAHA</string>
 </resources>

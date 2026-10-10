@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- 1. Judul Header -->
+    <TextView
+        android:id="@+id/label_judul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="IMPLEMENTASI CONSTRAINT LAYOUT"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- 2. Garis Pembatas / Divider -->
+    <View
+        android:id="@+id/dividerConst"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#CCCCCC"
+        app:layout_constraintTop_toBottomOf="@id/label_judul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- 3. Teks Definisi / Penjelasan Constraint Layout -->
+    <TextView
+        android:id="@+id/label_definisi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Constraint Layout merupakan layout dengan tata letak komponen secara bebas (tanpa aturan orientasi seperti horizontal dan vertikal pada Linear Layout) Setiap view memiliki constraint (tali) yang menarik setiap sisi dari layoutnya yang secara fleksibel (margin dll)"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/dividerConst"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- 4. Tombol OK -->
+    <Button
+        android:id="@+id/button_ok_const"
+        style="@style/button_OK_Biru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2F56C8"
+        app:backgroundTint="#2F56C8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_definisi"
+        android:layout_marginTop="20dp" />
+
+    <!-- 5. Tombol Cancel -->
+    <Button
+        android:id="@+id/button_cancel_const"
+        style="@style/button_CANCEL_Merah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#D32F2F"
+        app:backgroundTint="#D32F2F"
+        app:layout_constraintStart_toEndOf="@id/button_ok_const"
+        app:layout_constraintTop_toBottomOf="@id/label_definisi"
+        android:layout_marginTop="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

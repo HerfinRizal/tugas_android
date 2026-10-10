@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Belajar Pemrograman Mobile"
+            android:text="Belajar Membuat Aplikasi Android"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="normal"
@@ -96,12 +96,12 @@
             android:backgroundTint="#FF5C5C"
             android:layout_marginTop="10dp"/>
 
-        <!-- Lupa Password (Hanya ada 1 di bawah tombol Cancel dengan ID unik) -->
+        <!-- Lupa Password -->
         <TextView
             android:id="@+id/lupaPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lupa Password?"
+            android:text="Lupa password?"
             android:textAlignment="center"
             android:textSize="20sp"
             android:textColor="#000000"

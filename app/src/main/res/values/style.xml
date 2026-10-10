@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Style untuk Tombol OK (Biru) -->
     <style name="button_OK_Biru" parent="Widget.AppCompat.Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">OK</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">#FFFFFF</item>
-        <item name="android:background">#1FDFF1</item>
-        <item name="android:backgroundTint">#1FDFF1</item>
+        <item name="android:background">#2F56C8</item>
+        <item name="android:backgroundTint">#2F56C8</item>
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:minHeight">40dp</item>
+    </style>
+
+    <!-- Style untuk Tombol Cancel (Merah) -->
+    <style name="button_CANCEL_Merah" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">CANCEL</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#D32F2F</item>
+        <item name="android:backgroundTint">#D32F2F</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:minHeight">40dp</item>
+    </style>
+
+    <!-- Style Kustom DatePicker yang Paksa Warna Toska -->
+    <style name="CustomDatePickerStyle" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">#00C897</item>
+        <item name="colorPrimaryDark">#00C897</item>
+        <item name="colorAccent">#00C897</item>
+        <item name="android:colorPrimary">#00C897</item>
+        <item name="android:colorAccent">#00C897</item>
+        <item name="android:windowBackground">@android:color/white</item>
     </style>
 </resources>

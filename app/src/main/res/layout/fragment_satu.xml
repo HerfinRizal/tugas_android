@@ -1,16 +1,236 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="INI ADALAH FRAGMENT SATU"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="16dp">
 
-</FrameLayout>
+        <!-- Banner / Logo Header WARTEG ONLINE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="Logo Warteg Online"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAKAN GRATIS UNTUK ANAK YATIM😊"
+                android:textColor="#555555"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PENJELASAN IMPLEMENTASI LINEAR LAYOUT: Linear Layout merupakan layout yang mensejajarkan semua Child View nya dalam satu arah yang sama (horizontal atau vertical) Atribut wajib yang harus diterapkan dalam Linear Layout Adalah width, height dan orientation Atribut Orientation digunakan untuk mengatur arah Shield View pada Linear Layout "
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <!-- 1. Masukan Nama Usaha Anda -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukan Nama Usaha Anda"
+            android:textColor="#757575"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etNamaUsaha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Nama Usaha"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 2. Menu Makanan Usaha Anda -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu Makanan Usaha Anda"
+            android:textColor="#757575"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp" />
+
+        <CheckBox
+            android:id="@+id/cbSoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soto Ayam"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/cbPecel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nasi Pecel"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/cbRames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nasi Rames"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 3. Status Usaha Anda -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status Usaha Anda"
+            android:textColor="#757575"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp" />
+
+        <ToggleButton
+            android:id="@+id/status_usaha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="AKTIF"
+            android:textOff="TIDAK AKTIF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 4. Status Promo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status Promo"
+            android:textColor="#757575"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp" />
+
+        <Switch
+            android:id="@+id/status_promo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 5. Kategori Usaha -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kategori Usaha"
+            android:textColor="#757575"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp" />
+
+        <RadioGroup
+            android:id="@+id/kategori_usaha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbKecil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kecil"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbMenengah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menengah"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbBesar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Besar"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <!-- 6. Waktu Buka -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Waktu Buka"
+            android:textColor="#757575"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp" />
+
+        <TimePicker
+            android:id="@+id/waktu_buka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 7. Waktu Promo Utama -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Waktu Promo Utama"
+            android:textColor="#757575"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp" />
+
+        <DatePicker
+            android:id="@+id/waktu_promo_utama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="calendar"
+            android:calendarViewShown="false"
+            android:theme="@style/CustomDatePickerStyle"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Button OK -->
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2F56C8"
+            android:text="OK"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- TV Review -->
+        <TextView
+            android:id="@+id/tvReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review Profile Usaha"
+            android:textColor="#888888"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+</ScrollView>

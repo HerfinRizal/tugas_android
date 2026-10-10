@@ -2,7 +2,11 @@
 <resources>
 
     <style name="Theme.MyApplication"
-        parent="android:style/Theme.Material.Light.NoActionBar">
+        parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">#2F56C8</item>
+        <item name="colorSecondary">#00BCD4</item>
+        <item name="colorAccent">#00BCD4</item>
 
         <item name="android:windowBackground">@color/white</item>
         <item name="android:statusBarColor">@color/white</item>
@@ -11,6 +15,13 @@
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>
 
+    </style>
+
+    <style name="DatePickerCustomTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">#00BCD4</item>
+        <item name="colorPrimary">#00BCD4</item>
+        <item name="android:headerBackground">#00BCD4</item>
+        <item name="android:colorControlActivated">#00BCD4</item>
     </style>
 
 </resources>
